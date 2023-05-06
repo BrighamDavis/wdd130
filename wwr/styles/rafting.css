@@ -23,38 +23,42 @@
     --nav-hover-background-color: #396E94;
 }
 
-
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
+* {
+    max-width: 850px;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    position: absolute;
 }
-header {
-    padding: 20px;
-    background-color: var(--accent1-color);
-}
+
 p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
     padding: 25px;
+    margin: 0;
 }
-nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
-    display: flex;
-}
-nav a {
-    display: block;
-    color: var(--nav-link-color);
+
+.sociallinks {
     text-decoration: none;
-    padding: 1rem;
 }
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+
+div {
+    position: relative;
 }
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+
+article {
+    position: absolute;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.happy {
+    float:right;
+    margin: 0 0 1em 1em;
 }
